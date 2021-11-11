@@ -3,9 +3,11 @@ package kpc.springframework.springpetclinic.services.map;
 import kpc.springframework.springpetclinic.model.Vet;
 
 import kpc.springframework.springpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMappingService<Vet,Long> implements VetService {
     @Override
     public Set<Vet> findAll() {

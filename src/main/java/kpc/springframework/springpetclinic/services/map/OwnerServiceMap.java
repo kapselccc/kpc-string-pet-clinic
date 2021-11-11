@@ -3,9 +3,11 @@ package kpc.springframework.springpetclinic.services.map;
 import kpc.springframework.springpetclinic.model.Owner;
 
 import kpc.springframework.springpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMappingService<Owner,Long> implements OwnerService{
 
     @Override
