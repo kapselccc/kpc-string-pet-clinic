@@ -1,11 +1,12 @@
 package kpc.springframework.springpetclinic.services.map;
 
 import kpc.springframework.springpetclinic.model.Vet;
-import kpc.springframework.springpetclinic.services.CrudService;
+
+import kpc.springframework.springpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMappingService<Vet,Long> implements CrudService<Vet,Long> {
+public class VetServiceMap extends AbstractMappingService<Vet,Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
