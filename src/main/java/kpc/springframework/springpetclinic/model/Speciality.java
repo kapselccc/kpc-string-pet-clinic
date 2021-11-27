@@ -1,6 +1,11 @@
 package kpc.springframework.springpetclinic.model;
 
-public class Specialty extends BaseEntity{
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="specialties")
+public class Speciality extends BaseEntity{
     private String description;
 
     public String getDescription() {
